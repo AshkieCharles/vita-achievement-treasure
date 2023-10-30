@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
     "vite": "^4.4.5"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "embed-js": "^5.0.4",
     "embed-plugin-emoji": "^5.0.4",
-    "embed-plugin-url": "^5.0.4"
+    "embed-plugin-url": "^5.0.4",
+    "embed-preset-basic": "^5.0.4"
   }
 }

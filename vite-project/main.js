@@ -2,9 +2,6 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
-import EmbedJS from 'embed-js'
-import url from 'embed-plugin-url'
-import emoji from 'embed-plugin-emoji'
 
 
 
@@ -22,18 +19,10 @@ document.querySelector('#app').innerHTML = `
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more
-    <div id="element">
+    <div class="embed">
       <!--===== your string here =======-->
     </div>
   </div>
 `
 
 setupCounter(document.querySelector('#counter'))
-
-const x = new EmbedJS({
-  input: document.getElementById('element'),
-  plugins: [
-    url(),
-    emoji()
-  ]
-})
